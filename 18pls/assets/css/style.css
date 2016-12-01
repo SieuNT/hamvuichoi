@@ -1,0 +1,102 @@
+body {
+    font-family: 'Itim', cursive;
+    font-size: 14px;
+    background-color: rgba(19, 17, 17, 0.65);
+    color: #222;
+}
+
+a {
+    color: #222;
+}
+
+a:hover {
+    color: #e53d40;
+}
+
+/*Navigation*/
+.wrap-header {
+    background: #ffffff;
+}
+
+.wrap-header .navbar {
+    box-shadow: 0 0 32px rgba(0,0,0,.15);
+    border-bottom: 0;
+}
+
+.wrap-header .navbar-header {
+}
+
+.wrap-header .navbar-header .navbar-brand {
+}
+
+.main-menu .nav > li > a {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.media-player,
+.videos-related {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#jwplayer {
+    height:100%;
+    width:100%;
+}
+
+.wrap-content .container {
+    background-color: #fff;
+}
+
+.videos-thumbnail {
+    position: relative;
+}
+
+.videos-thumbnail .link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0);
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.videos-thumbnail .link-overlay:before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0 0 -14px;
+    border-radius: 50%;
+    background: transparent;
+    text-align: center;
+    font: 14px/30px 'FontAwesome';
+    transform: scale(0.8);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
+    box-shadow: 0 0 0 4px rgba(255,255,255,1);
+    color: #FFF;
+}
+
+.videos-thumbnail:hover .link-overlay {
+    background: rgba(21, 46, 76, 0.85);
+    text-decoration: none;
+}
+
+.videos-thumbnail:hover .link-overlay:before{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    text-decoration: none;
+}
